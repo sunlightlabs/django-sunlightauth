@@ -25,6 +25,7 @@ class SunlightBackend(OAuthBackend):
                 'email': response.get('email'),
                 'first_name': response.get('first_name'),
                 'last_name': response.get('last_name'),
+                'is_staff': response.get('is_staff'),
                }
 
 

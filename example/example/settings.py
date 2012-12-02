@@ -34,6 +34,7 @@ AUTHENTICATION_BACKENDS = (
     'sunlightauth.backends.SunlightBackend',
 )
 
+SUNLIGHT_AUTH_BASE_URL = 'http://localhost:8000/'
 SUNLIGHT_AUTH_APP_ID = 'a-key'
 SUNLIGHT_AUTH_SECRET = 'a-secret'
 SUNLIGHT_AUTH_SCOPE = []
