@@ -19,9 +19,12 @@ Also set the following settings:
 SUNLIGHT_AUTH_BASE_URL
     Base URL (defaults to 'http://login.sunlightfoundation.com', only change
               for testing)
+              
 SUNLIGHT_AUTH_APP_ID
     OAuth2 client app id
+    
 SUNLIGHT_AUTH_SECRET
     OAuth2 client secret
+    
 SUNLIGHT_AUTH_SCOPE
     generally is set to []
