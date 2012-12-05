@@ -38,6 +38,7 @@ class SunlightAuth(BaseOAuth2):
     SETTINGS_SECRET_NAME = 'SUNLIGHT_AUTH_SECRET'
     SCOPE_VAR_NAME = 'SUNLIGHT_AUTH_SCOPE'
     SCOPE_SEPARATOR = ','
+    REDIRECT_STATE = False
 
     def user_data(self, access_token, *args, **kwargs):
         """Loads user data from service"""
