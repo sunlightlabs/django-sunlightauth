@@ -8,6 +8,8 @@ DATABASES = {
     }
 }
 
+TIME_ZONE = 'America/New_York'
+
 MEDIA_ROOT = ''
 MEDIA_URL = ''
 STATIC_ROOT = ''
