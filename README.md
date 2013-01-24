@@ -10,8 +10,9 @@ django-social-auth backend)
 Installation
 ============
 Add 'social_auth' to INSTALLED_APPS if it isn't already
-Also add social auth URLS:
-    url(r'', include('social_auth.urls')),
+
+Also add auth URLS:
+    url(r'', include('sunlightauth.urls')),
 
 Add 'sunlightauth.backends.SunlightBackend' to AUTHENTICATION_BACKENDS
 )
