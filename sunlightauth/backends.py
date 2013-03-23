@@ -2,7 +2,7 @@
 from urllib import urlencode
 import json
 from social_auth.utils import setting, dsa_urlopen
-from social_auth.backends import BaseOAuth2, OAuthBackend, USERNAME
+from social_auth.backends import BaseOAuth2, OAuthBackend
 
 
 BASE_SUNLIGHT_URL = setting('SUNLIGHT_AUTH_BASE_URL',
