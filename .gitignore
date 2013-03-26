@@ -1,2 +1,5 @@
 *.pyc
 example.db
+build/
+dist/
+django_sunlightauth.egg-info/
