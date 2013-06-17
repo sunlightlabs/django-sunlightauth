@@ -6,7 +6,7 @@ from social_auth.backends import BaseOAuth2, OAuthBackend
 
 
 BASE_SUNLIGHT_URL = setting('SUNLIGHT_AUTH_BASE_URL',
-                            'http://login.sunlightfoundation.com/')
+                            'https://login.sunlightfoundation.com/')
 SUNLIGHT_AUTHORIZATION_URL = '%soauth2/authorize/' % BASE_SUNLIGHT_URL
 SUNLIGHT_ACCESS_TOKEN_URL = '%soauth2/token/' % BASE_SUNLIGHT_URL
 SUNLIGHT_USER_DATA_URL = '%sapi/userinfo/' % BASE_SUNLIGHT_URL

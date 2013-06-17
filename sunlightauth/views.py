@@ -24,7 +24,7 @@ def logout(request):
 
     logout_url = ''.join((
         setting('SUNLIGHT_AUTH_BASE_URL',
-                'http://login.sunlightfoundation.com/'),
+                'https://login.sunlightfoundation.com/'),
         'accounts/logout/?next=',
         redirect_to
     ))
