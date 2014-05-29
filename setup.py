@@ -14,6 +14,6 @@ setup(name='django-sunlightauth',
       url='http://github.com/sunlightlabs/django-sunlightauth',
       license="BSD License",
       platforms=["any"],
-      install_requires=['django-social-auth'],
+      install_requires=['python-social-auth'],
       packages=find_packages(),
      )

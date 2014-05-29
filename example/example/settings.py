@@ -29,17 +29,17 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'social_auth',
+    'social.apps.django_app.default',
 )
 
 AUTHENTICATION_BACKENDS = (
     'sunlightauth.backends.SunlightBackend',
 )
 
-SUNLIGHT_AUTH_BASE_URL = 'http://localhost:8000/'
-SUNLIGHT_AUTH_APP_ID = 'a-key'
-SUNLIGHT_AUTH_SECRET = 'a-secret'
-SUNLIGHT_AUTH_SCOPE = []
+# SUNLIGHT_AUTH_BASE_URL = 'http://localhost:8000/'
+SOCIAL_AUTH_SUNLIGHT_KEY = 'a-id'
+SOCIAL_AUTH_SUNLIGHT_SECRET = 'a-secret'
+
 
 LOGGING = {
     'version': 1,

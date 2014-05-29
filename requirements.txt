@@ -1,1 +1,1 @@
-django-social-auth
+python-social-auth
