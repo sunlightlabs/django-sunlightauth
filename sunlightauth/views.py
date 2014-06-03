@@ -2,7 +2,7 @@ from django.contrib.auth import logout as auth_logout
 from django.contrib.sites.models import Site
 from django.http import HttpResponseRedirect
 from django.utils.http import is_safe_url
-from social_auth.utils import setting
+from django.conf import settings
 
 def logout(request):
     """ log user out and redirect them to a next page or site root """
@@ -22,10 +22,8 @@ def logout(request):
     ## prepend host (use sites framework?)
     redirect_to = 'http://' + Site.objects.get_current().domain + redirect_to
 
-    logout_url = ''.join((
-        setting('SUNLIGHT_AUTH_BASE_URL',
-                'https://login.sunlightfoundation.com/'),
-        'accounts/logout/?next=',
-        redirect_to
-    ))
+    logout_url = ''.join((settings.SUNLIGHT_AUTH_BASE_URL,
+                          'accounts/logout/?next=',
+                          redirect_to))
+
     return HttpResponseRedirect(logout_url)

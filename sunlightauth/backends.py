@@ -1,5 +1,9 @@
 """ Sunlight OAuth support.  """
-from urllib.parse import urlencode
+try:
+    from urllib.parse import urlencode
+except ImportError:
+    from urllib import urlencode
+
 import json
 from social.backends.oauth import BaseOAuth2
 
