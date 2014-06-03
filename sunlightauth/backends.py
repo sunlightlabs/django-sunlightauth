@@ -45,12 +45,3 @@ class SunlightBackend(BaseOAuth2):
                 'is_staff': response.get('is_staff'),
                 'is_superuser': response.get('is_superuser'),
                }
-
-
-class SunlightAuth(BaseOAuth2):
-    """Sunlight OAuth2 mechanism"""
-    AUTH_BACKEND = SunlightBackend
-
-
-# expose backend to django-social-auth
-BACKENDS = {'sunlight': SunlightAuth}
